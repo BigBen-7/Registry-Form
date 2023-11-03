@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login/Register form page</title>
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -14,41 +16,82 @@
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
-        <button class="btnLogin-popup">Login</button>
-      </nav>
+    </nav>
+    <button class="btnLogin-popup">Login</button>
     </header>
 
     <div class="wrapper">
-      <div class="form-box login">
-        <h2>login</h2>
+      <span class="icon-closed"><ion-icon name="close-circle"></ion-icon></span>
+      <div class="form-box login login-form">
+        <h2>Login</h2>
         <form action="#">
           <div class="input-box">
             <span class="icon"><ion-icon name="mail"></ion-icon></span>
-            <input type="email" required />
+            <input type="email" id="email" required />
             <label>Email</label>
           </div>
           <div class="input-box">
-            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-            <input type="password" required />
+            <span class="icon"><img src="eye-close.png" alt="" id="eyeicon"></span>
+            <input type="password" id="password" required />
             <label>Password</label>
           </div>
           <div class="remember-forgot">
             <label>
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" />
               Remember me
             </label>
             <a href="#">Forget Password?</a>
           </div>
-          <button class="btn">Login</button>
+          <button type="submit" class="btn">Login</button>
           <div class="login-register">
             <p>
-              Don't have an account?<a href="#" class="register-link"></a
-              >Register
+              Don't have an account?
+              <a href="#" class="register-link">Register</a>
             </p>
           </div>
+         
+        </div>
+          <!-- Register PAGE  -->
+          <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text"  required />
+                    <label>Username</label>
+                  </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required />
+                <label>Email</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                
+                <input type="password" required />
+                <label>Password</label>
+              </div>
+              
+              <div class="remember-forgot">
+                <label>
+                  <input type="checkbox" />
+                I agree to the terms & conditions
+                </label>
+             
+              </div>
+              <button class="btn">Register</button>
+              <div class="login-register">
+                <p>
+              Already have an account?
+                  <a href="#" class="login-link">Login</a>
+                </p>
+              </div>
+
+
+
         </form>
       </div>
-    </div>
+  
 
     <script src="script.js"></script>
     <script
